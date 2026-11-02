@@ -1,0 +1,19 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    min-width: 320px;
+    font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+@theme {
+  /* En liant vos variables à la palette native de Tailwind */
+  --couleur-principale: var(--color-green-800);
+  --couleur-hover: var(--color-green-600);
+  --input-border: var(--color-green-500);
+  --input-focus: var(--color-green-100);
+}
